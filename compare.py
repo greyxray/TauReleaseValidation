@@ -136,7 +136,7 @@ if __name__ == '__main__':
 
     if part == 2: print "Second part of plots"
     for index, (hname, hdict) in enumerate(hvardict.iteritems()):
-        print  index, ":", hname
+        if debug: print  index, ":", hname
         if   part == 2 and index >  len(hvardict.items()) / 2: break
         elif part == 3 and index <= len(hvardict.items()) / 2: continue
         elif part == 3 and index - 1 == len(hvardict.items()) / 2: print "Third part of plots"
